@@ -10,6 +10,7 @@
 		7313D25E21DAAE9D00B9A135 /* ResultKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7313D25421DAAE9D00B9A135 /* ResultKit.framework */; };
 		7313D26321DAAE9D00B9A135 /* ResultKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7313D26221DAAE9D00B9A135 /* ResultKitTests.swift */; };
 		7313D26521DAAE9D00B9A135 /* ResultKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 7313D25721DAAE9D00B9A135 /* ResultKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7313D26F21DAAEAF00B9A135 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7313D26E21DAAEAF00B9A135 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		7313D25D21DAAE9D00B9A135 /* ResultKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResultKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7313D26221DAAE9D00B9A135 /* ResultKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultKitTests.swift; sourceTree = "<group>"; };
 		7313D26421DAAE9D00B9A135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7313D26E21DAAEAF00B9A135 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				7313D25721DAAE9D00B9A135 /* ResultKit.h */,
 				7313D25821DAAE9D00B9A135 /* Info.plist */,
+				7313D26E21DAAEAF00B9A135 /* Result.swift */,
 			);
 			path = ResultKit;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					7313D25321DAAE9D00B9A135 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					7313D25C21DAAE9D00B9A135 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7313D26F21DAAEAF00B9A135 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		7313D26921DAAE9D00B9A135 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.bluerope.ResultKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		7313D26A21DAAE9D00B9A135 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		7313D26C21DAAE9D00B9A135 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ResultKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		7313D26D21DAAE9D00B9A135 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ResultKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
